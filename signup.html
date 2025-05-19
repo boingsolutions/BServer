@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>MangoSpot | Form Register</title>
+    <link rel="shortcut icon" href="dist/img/favicon.png">
+    <link href="dist/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="preloader-it">
+        <div class="loader-pendulums"></div>
+    </div>
+    <div class="hk-wrapper">
+        <div class="hk-pg-wrapper hk-auth-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-8 pa-0">
+                        <div id="owl_demo_1" class="owl-carousel dots-on-item owl-theme"></div>
+                    </div>
+                    <div class="col-xl-4 pa-0">
+                        <div class="auth-form-wrap py-xl-0 pt-100 pb-50">
+                            <div class="auth-form w-xxl-90 w-xl-90 w-md-90 w-sm-90 w-90">
+                                <header class="text-center text-center mb-10">
+                                    <a class="auth-brand" href="index-2.html">
+                                        <img class="brand-img" src="dist/img/logo-dark.png" alt="brand" />
+                                    </a>
+                                </header>
+                                <h2>Form Signup</h2>
+                                <p class="mb-15">Create your account</p>
+                                <form id="form-register" method="POST" action="https://admin.mangospot.net/signup" data-modal="false">
+                                    <div class="input-group form-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                        </div>
+                                        <input type="text" name="name" minlength="3" class="form-control"
+                                            placeholder="Full Name" required>
+                                    </div>
+                                    <div class="input-group form-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                                        </div>
+                                        <input type="email" name="email" id="email" class="form-control"
+                                            placeholder="Email Address" required>
+                                    </div>
+                                    <div class="input-group form-group">
+                                        <div class="input-group-prepend">
+                                            <select class="form-control" id="country" name="country" required></select>
+                                        </div>
+                                        <input type="number" name="phone" id="phone" class="form-control"
+                                            placeholder="Phone Number">
+                                    </div>
+                                    <div class="input-group mb-5">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fa fa-key"></i></span>
+                                        </div>
+                                        <input type="password" minlength="6" id="new" class="form-control"
+                                            placeholder="Password" required>
+                                        <input type="password" minlength="6" name="rpassword" class="form-control"
+                                            placeholder="Password Again" required>
+                                    </div>
+                                    <span class="pswprogress"></span>
+                                    <label class="mb-10 mt-10">
+                                        <input type="checkbox" name="register" value="true" required>
+                                        I agree
+                                    </label>
+                                    <button type="submit" class="btn btn-primary btn-block btn-wth-icon" disabled>
+                                        <span class="icon-label"><i class="fa fa-user-plus"></i></span>
+                                        <span class="btn-text">Register</span>
+                                    </button>
+                                </form>
+                                <div class="option-sep mb-10 mt-10">or</div>
+                                <button class="btn btn-danger btn-block btn-wth-icon" id="loginGO" style="display:none">
+                                    <span class="icon-label"><i class="fa fa-google-plus"></i> </span>
+                                    <span class="btn-text">Register with google</span>
+                                </button>
+                                <button class="btn btn-indigo btn-block btn-wth-icon" id="loginFB" style="display:none">
+                                    <span class="icon-label"><i class="fa fa-facebook"></i> </span>
+                                    <span class="btn-text">Register with facebook</span>
+                                </button>
+                                <p class="text-center mt-10">
+                                    Already have an account?
+                                    <a href="login.html">Sign In</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="vendors/jquery/jquery.min.js"></script>
+    <script src="vendors/popper.js/popper.min.js"></script>
+    <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendors/owl.carousel/owl.carousel.min.js"></script>
+    <script src="vendors/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="vendors/pwstrength/pwstrength-bootstrap.min.js"></script>
+    <script src="js/platform.js" async defer></script>
+    <script src="vendors/validation/jquery.validate.min.js"></script>
+    <script src="vendors/jquery-toast/jquery.toast.js"></script>
+    <script src="vendors/jquery-cookie/jquery.cookie.js"></script>
+    <script src="vendors/slimscroll/jquery.slimscroll.js"></script>
+    <script src="vendors/bootstrap/dropdown-extended.js"></script>
+    <script src="vendors/select2/js/select2.min.js"></script>
+    <script src="vendors/feather/feather.min.js"></script>
+    <script src="dist/js/controls.js"></script>
+    <script src="dist/js/init.js"></script>
+    <script src="dist/js/auth.js"></script>
+    <script src="dist/js/signup.js"></script>
+</body>
+
+</html>
