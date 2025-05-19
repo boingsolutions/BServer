@@ -1,9 +1,9 @@
 <?php
-define("TYPE", "mysql"); // pgsql or mysql
+define("TYPE", "pgsql"); // pgsql or mysql
 define("DB_HOST", "localhost"); // localhost or ip
-define("DB_USER", "username"); // username database
-define("DB_PASSWORD", "password"); // password database
-define("DB_DATABASE", "database"); // table database
+define("DB_USER", "bsuser"); // username database
+define("DB_PASSWORD", "bsXYA2o1w63a9zQ"); // password database
+define("DB_DATABASE", "bserver"); // table database
 define("SSH_HOST", $_SERVER['SERVER_NAME']); // SSH Host
 define("SSH_PORT", 22); // Port SSH
 define("SSH_USERNAME", "ssh_username"); // Username SSH
